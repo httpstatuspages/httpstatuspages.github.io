@@ -16,7 +16,7 @@ jobs:
           git clone https://gitlab.com/statuspages/statuspages.gitlab.io.git /tmp/in
           cd /tmp/in
           cp -rv $(ls -1 |grep -v README ) $orig/
-          sed 's/statuspages.gitlab.io/httpstatuspages.github.io/g' $(find $orig -type f)
+          sed 's/statuspages.gitlab.io/httpstatuspages.github.io/g' $(find $orig -type f) -i
           
 
       - name: Deploy 🚀
