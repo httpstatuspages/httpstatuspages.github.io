@@ -1,4 +1,4 @@
-name: pages-build-and-deploy
+name: pages-build-deployment
 on: [push]
 jobs:
   build-and-deploy:
