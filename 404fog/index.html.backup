@@ -3,7 +3,7 @@
 <head>
   <title>The page you were looking for doesn't exist (404)</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>  <style>
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>  <style>
   body {
     height: 100%;
     width: 100%;
@@ -71,5 +71,5 @@
     </div>
   </div> 
 </body>
-<footer><a href="http://www.the-foundation.gitlab.io" target="_blank">the-foundation.gitlab.io</a> image credit: <a href="http://dribbble.com/shots/1815713-Golden-Gate-in-the-fog" target="_blank">Dribbble</a></footer>
+<footer><a href="https://www.the-foundation.gitlab.io" target="_blank">the-foundation.gitlab.io</a> image credit: <a href="https://dribbble.com/shots/1815713-Golden-Gate-in-the-fog" target="_blank">Dribbble</a></footer>
 </html>
