@@ -17,7 +17,9 @@ jobs:
           cd /tmp/in
           cp -rv $(ls -1 |grep -v README ) $orig/
           sed 's/statuspages.gitlab.io/httpstatuspages.github.io/g' $(find $orig -type f) -i
-          
+          git clone https://gitlab.com/httpstatus/httpstatus.gitlab.io.git /tmp/httpstatus.gitlab.io
+          cd /tmp/httpstatus.gitlab.io; ls -1 |grep -v -e index.html -e README |  while read file;do test -e $dst/$file || cp -rv $file $orig/;done;echo copy done ; find $orig |sort ;ls -1 $orig/index.html 
+          sed "s/httpstatus.gitlab.io/httpstatuspages.github.io/g" -i $(find $dst -type f)'          
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.7
