@@ -12,7 +12,7 @@ jobs:
           pwd
           mkdir build
           orig=$(pwd)/build
-          cp -rv $(ls -1 |grep -v -e build -e README ) $orig/
+          [[ -z "$(ls -1 |grep -v -e build -e README )" ]] || cp -rv $(ls -1 |grep -v -e build -e README ) $orig/
           git clone https://gitlab.com/statuspages/statuspages.gitlab.io.git /tmp/in
           cd /tmp/in
           cp -rv $(ls -1 |grep -v README ) $orig/
